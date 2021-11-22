@@ -7,8 +7,17 @@ $white: hsl(0, 0%, 100%);
 $light-gray: hsl(0, 0%, 81%);
 $light-grayish-blue: hsl(210, 46%, 95%);
 
+$img-quotes: url(/Testimonials-Grid-Section/images/bg-pattern-quotation.svg);
+
 // font-family weights function
-@function fontWeight($weight) {
-  $font-family: "Barlow Semi Condensed", sans-serif;
-  $font-weight: $weight;
+@mixin fontWeight($weight) {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: $weight;
+}
+
+@mixin background($imgPath) {
+  background-image: $imgPath;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

@@ -29,24 +29,71 @@ body {
   display: -ms-grid;
   display: grid;
   grid-row-gap: 1rem;
-  grid-auto-rows: minmax(1fr, auto);
+  grid-auto-rows: minmax(100px, auto);
 }
 
 #grid .nested-main .daniel-clifford {
-  display: -ms-grid;
-  display: grid;
+  background: #7541c8;
 }
 
 #grid .nested-main .daniel-clifford .daniel-header {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (25%)[2];
-      grid-template-columns: repeat(2, 25%);
+  background: #7541c8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
   padding-left: 10%;
+  height: 4rem;
+}
+
+#grid .nested-main .daniel-clifford .daniel-header .person {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#grid .nested-main .daniel-clifford .daniel-header .person .name {
+  color: #cfcfcf;
+}
+
+#grid .nested-main .daniel-clifford .daniel-header .person .verrified {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  color: #cfcfcf;
+  opacity: 50%;
+}
+
+#grid .nested-main .daniel-clifford blockquote {
+  width: 100%;
+  padding: 20px 10%;
+  font-size: 1.5rem;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  color: white;
+}
+
+#grid .nested-main .daniel-clifford .main-text {
+  width: 100%;
+  padding: 20px 10%;
+  font-size: 1.1rem;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  color: #cfcfcf;
+  opacity: 70%;
 }
 
 #grid .nested-main img {
-  border-radius: 25px;
+  border-radius: 30px;
+  margin-right: 1rem;
 }
 
 #grid div:nth-child(odd) {
