@@ -26,63 +26,84 @@ body {
     grid-auto-columns: auto;
     grid-gap: 1rem;
 
+    .element-styles {
+      padding: 0px 10%;
+      border-radius: 15px;
+    }
+
     .daniel-clifford {
       background-color: $moderate-violet;
       background-image: url(/Testimonials-Grid-Section/images/bg-pattern-quotation.svg);
-      padding: 0px 10%;
-      display: flex;
-      flex-direction: column;
-      border-radius: 25px;
       position: relative;
       background-repeat: no-repeat;
       background-position: 90% 0;
     }
 
-    .header-with-picture {
-      display: flex;
-      width: 100%;
-      padding: 1.5rem 0;
+    .Jonathan-Walters {
+      background-color: $very-dark-grayish-blue;
+    }
 
-      img {
-        border-radius: 30px;
-        margin-right: 20px;
-        width: 2rem;
-        height: 2rem;
-      }
+    .Jeanette-Harmon {
+      background-color: white;
 
-      .person {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        color: $light-gray;
-
-        .name {
-          font-size: 0.9rem;
-          @include fontWeight(500);
-        }
-
-        .verrified {
-          font-size: 0.9rem;
-          @include fontWeight(500);
-          opacity: 50%;
-        }
+      .grayish {
+        color: $very-dark-grayish-blue;
       }
     }
 
-    blockquote {
-      color: white;
-      font-size: 1.25rem;
-      @include fontWeight(600);
-      line-height: 1.4;
-    }
+    .Patrick-Abrams {
+      background-color: $very-dark-blackish-blue;
 
-    .main-text {
-      padding: 1.5rem 0;
-      color: $light-gray;
-      opacity: 70%;
-      font-size: 0.9rem;
-      line-height: 1.4;
-      @include fontWeight(600);
+      // display: flex;
+      // flex-direction: column;
     }
   }
+}
+
+.header-with-picture {
+  display: flex;
+  width: 100%;
+  padding: 1rem 0;
+
+  img {
+    border-radius: 30px;
+    margin-right: 20px;
+    width: 3rem;
+    height: 3rem;
+    border: 3px solid $light-grayish-blue;
+  }
+
+  .person {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $light-gray;
+
+    .name {
+      font-size: 0.9rem;
+      @include fontWeight(500);
+    }
+
+    .verrified {
+      font-size: 0.9rem;
+      @include fontWeight(500);
+      opacity: 50%;
+    }
+  }
+}
+
+blockquote {
+  color: white;
+  font-size: 1.25rem;
+  @include fontWeight(600);
+  line-height: 1.4;
+}
+
+.main-text {
+  padding: 1.5rem 0;
+  color: $light-gray;
+  opacity: 70%;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  @include fontWeight(600);
 }

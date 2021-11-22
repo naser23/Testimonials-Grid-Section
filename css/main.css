@@ -31,39 +31,52 @@ body {
   grid-gap: 1rem;
 }
 
+#grid .nested-main .element-styles {
+  padding: 0px 10%;
+  border-radius: 15px;
+}
+
 #grid .nested-main .daniel-clifford {
   background-color: #7541c8;
   background-image: url(/Testimonials-Grid-Section/images/bg-pattern-quotation.svg);
-  padding: 0px 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border-radius: 25px;
   position: relative;
   background-repeat: no-repeat;
   background-position: 90% 0;
 }
 
-#grid .nested-main .header-with-picture {
+#grid .nested-main .Jonathan-Walters {
+  background-color: #48556a;
+}
+
+#grid .nested-main .Jeanette-Harmon {
+  background-color: white;
+}
+
+#grid .nested-main .Jeanette-Harmon .grayish {
+  color: #48556a;
+}
+
+#grid .nested-main .Patrick-Abrams {
+  background-color: #19212e;
+}
+
+.header-with-picture {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
 }
 
-#grid .nested-main .header-with-picture img {
+.header-with-picture img {
   border-radius: 30px;
   margin-right: 20px;
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
+  border: 3px solid #ecf2f8;
 }
 
-#grid .nested-main .header-with-picture .person {
+.header-with-picture .person {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,20 +90,20 @@ body {
   color: #cfcfcf;
 }
 
-#grid .nested-main .header-with-picture .person .name {
+.header-with-picture .person .name {
   font-size: 0.9rem;
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 500;
 }
 
-#grid .nested-main .header-with-picture .person .verrified {
+.header-with-picture .person .verrified {
   font-size: 0.9rem;
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 500;
   opacity: 50%;
 }
 
-#grid .nested-main blockquote {
+blockquote {
   color: white;
   font-size: 1.25rem;
   font-family: "Barlow Semi Condensed", sans-serif;
@@ -98,12 +111,12 @@ body {
   line-height: 1.4;
 }
 
-#grid .nested-main .main-text {
+.main-text {
   padding: 1.5rem 0;
   color: #cfcfcf;
   opacity: 70%;
   font-size: 0.9rem;
-  line-height: 1.4;
+  line-height: 1.5;
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 600;
 }
