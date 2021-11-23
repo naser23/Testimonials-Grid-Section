@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,MAAM,EAAE,SAAS,EAAE,QAAQ;EACzB,AAAA,IAAI,CAAC;IACH,OAAO,EAAE,IAAI;IACb,eAAe,EAAE,MAAM;IACvB,WAAW,EAAE,MAAM;GACpB;EACD,AAAA,KAAK,CAAC;IACJ,KAAK,EAAE,GAAG;IACV,MAAM,EAAE,GAAG;IACX,OAAO,EAAE,IAAI;IACb,qBAAqB,EAAE,OAAO;GAM/B;EAVD,AAME,KANG,CAMH,YAAY,CAAC;IACX,OAAO,EAAE,IAAI;IACb,kBAAkB,EAAE,eAAe;GACpC",
+    "sources": [
+        "../scss/queries.scss"
+    ],
+    "names": [],
+    "file": "queries.css"
+}

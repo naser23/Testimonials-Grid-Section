@@ -1,0 +1,19 @@
+@media (min-width: 991.98px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #grid {
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+
+    .nested-main {
+      display: grid;
+      grid-template-rows: 2fr 1fr;
+      grid-row: 1 / 3;
+    }
+  }
+}
