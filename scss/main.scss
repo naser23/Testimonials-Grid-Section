@@ -20,12 +20,12 @@ body {
   width: 90%;
 
   grid-template-columns: 2fr, 1fr;
-  grid-gap: 1rem;
+  gap: 1rem;
 
   .nested-main {
     display: grid;
-    grid-auto-columns: auto;
-    grid-gap: 1rem;
+    // grid-auto-columns: auto;
+    gap: 1rem;
 
     .daniel-clifford {
       background-color: $moderate-violet;

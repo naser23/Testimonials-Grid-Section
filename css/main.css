@@ -21,14 +21,13 @@ body {
   width: 90%;
   -ms-grid-columns: 2fr, 1fr;
       grid-template-columns: 2fr, 1fr;
-  grid-gap: 1rem;
+  gap: 1rem;
 }
 
 #grid .nested-main {
   display: -ms-grid;
   display: grid;
-  grid-auto-columns: auto;
-  grid-gap: 1rem;
+  gap: 1rem;
 }
 
 #grid .nested-main .daniel-clifford {
@@ -152,18 +151,17 @@ blockquote {
   }
   #grid {
     margin-top: 4rem;
-    width: 70%;
-    height: 50%;
+    width: 90%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 70% 30%;
-        grid-template-columns: 70% 30%;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
   }
   #grid .nested-main {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (minmax(0, 1fr))[3];
+        grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   #grid .nested-main .daniel-clifford {
     grid-column: span 2;
@@ -172,7 +170,7 @@ blockquote {
     grid-column: span 2;
   }
   .main-text {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 
