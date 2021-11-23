@@ -22,6 +22,7 @@ body {
   height: 90%;
   -ms-grid-columns: 2fr, 1fr;
       grid-template-columns: 2fr, 1fr;
+  grid-gap: 1rem;
 }
 
 #grid .nested-main {
@@ -29,11 +30,6 @@ body {
   display: grid;
   grid-auto-columns: auto;
   grid-gap: 1rem;
-}
-
-#grid .nested-main .element-styles {
-  padding: 0px 10%;
-  border-radius: 15px;
 }
 
 #grid .nested-main .daniel-clifford {
@@ -58,6 +54,24 @@ body {
 
 #grid .nested-main .Patrick-Abrams {
   background-color: #19212e;
+}
+
+#grid .nested-end {
+  display: -ms-grid;
+  display: grid;
+}
+
+#grid .nested-end .Kira-Whittle {
+  background-color: white;
+}
+
+#grid .nested-end .Kira-Whittle .person {
+  color: #19212e;
+}
+
+.element-styles {
+  padding: 0px 10%;
+  border-radius: 15px;
 }
 
 .header-with-picture {
@@ -119,5 +133,9 @@ blockquote {
   line-height: 1.5;
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 600;
+}
+
+.grayish {
+  color: #48556a;
 }
 /*# sourceMappingURL=main.css.map */

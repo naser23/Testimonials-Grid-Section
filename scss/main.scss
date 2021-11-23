@@ -20,16 +20,12 @@ body {
   width: 90%;
   height: 90%;
   grid-template-columns: 2fr, 1fr;
+  grid-gap: 1rem;
 
   .nested-main {
     display: grid;
     grid-auto-columns: auto;
     grid-gap: 1rem;
-
-    .element-styles {
-      padding: 0px 10%;
-      border-radius: 15px;
-    }
 
     .daniel-clifford {
       background-color: $moderate-violet;
@@ -58,6 +54,23 @@ body {
       // flex-direction: column;
     }
   }
+
+  .nested-end {
+    display: grid;
+
+    .Kira-Whittle {
+      background-color: $white;
+
+      .person {
+        color: $very-dark-blackish-blue;
+      }
+    }
+  }
+}
+
+.element-styles {
+  padding: 0px 10%;
+  border-radius: 15px;
 }
 
 .header-with-picture {
@@ -106,4 +119,8 @@ blockquote {
   font-size: 0.9rem;
   line-height: 1.5;
   @include fontWeight(600);
+}
+
+.grayish {
+  color: $very-dark-grayish-blue;
 }
