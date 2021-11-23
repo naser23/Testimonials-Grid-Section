@@ -146,13 +146,14 @@ blockquote {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
   #grid {
-    width: 90%;
-    height: 90%;
+    margin-top: 4rem;
+    width: 70%;
+    height: 50%;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 70% 30%;
@@ -161,11 +162,20 @@ blockquote {
   #grid .nested-main {
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 2fr 1fr;
-        grid-template-rows: 2fr 1fr;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    grid-row: 1 / 3;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  #grid .nested-main .daniel-clifford {
+    grid-column: span 2;
+  }
+  #grid .nested-main .Patrick-Abrams {
+    grid-column: span 2;
+  }
+}
+
+@media (width: 1024px) and (orientation: landscape) {
+  #grid {
+    width: 90%;
   }
 }
 /*# sourceMappingURL=main.css.map */
