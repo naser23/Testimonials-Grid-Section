@@ -6,10 +6,10 @@
   }
   #grid {
     margin-top: 4rem;
-    width: 90%;
+    width: 80%;
 
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2.5fr 0.75fr;
 
     .nested-main {
       display: grid;
