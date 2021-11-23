@@ -171,6 +171,9 @@ blockquote {
   #grid .nested-main .Patrick-Abrams {
     grid-column: span 2;
   }
+  .main-text {
+    font-size: 1rem;
+  }
 }
 
 @media (width: 1024px) and (orientation: landscape) {
